@@ -1,0 +1,20 @@
+{
+  "title": "Pain Perdu",
+  "description": "Description Pain Perdu website",
+  "pages": {
+    "home": {
+      "title": "Home",
+      "description": "Description Home"
+    }
+  },
+  "system": {
+    "notfound": {
+      "title": "Not found"
+    },
+    "soonpage": {}
+  },
+  "social": {
+    "uri": "http://painperdu.io",
+    "twitter": "@_PainPerdu_"
+  }
+}

@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+// configs
+@import 'configs/breakpoint';
+@import 'configs/colors';
+@import 'configs/fonts';
+
+// mixins
+// @import 'mixins/border-radius';
+// @import 'mixins/clearfix';
+@import 'mixins/font-size';
+@import 'mixins/font-smoothing';
+// @import 'mixins/image-2x';
+// @import 'mixins/position';
+@import 'mixins/size';
+
+// fonts
+//@import 'fonts/FONT_NAME';
+
+// keyframes
+// @import 'keyframes/fadein';
+// @import 'keyframes/fadeout';
+// @import 'keyframes/rotation-left';
+// @import 'keyframes/rotation-right';
+
+// base
+//@import 'base/normalize';
+@import 'base/reset';
+@import 'base/layout';
+
+// blocks
+@import 'blocks/header';
+
+// views
+@import 'views/home';
+@import 'views/not-found';

@@ -1,0 +1,17 @@
+{
+  "routes":
+  {
+    "app": [
+      {
+        "id": "home",
+        "url": "/",
+        "httpcode": 200,
+        "enable": true
+      }
+    ],
+    "system": {
+      "notfound": { "id": "notfound", "httpcode": 404, "enable": true },
+      "soonpage": { "id": "coming-soon", "httpcode": 503, "enable": false }
+    }
+  }
+}
