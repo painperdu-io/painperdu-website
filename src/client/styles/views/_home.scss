@@ -1,0 +1,13 @@
+body {
+   p {
+    @include font-size(12);
+    }
+}
+
+section {
+    position: relative;
+    padding: 50px 0;
+}
+
+.bg-red { background-color: $red; color: $white;}
+.bg-blue { background-color: $blue; color: $white;}

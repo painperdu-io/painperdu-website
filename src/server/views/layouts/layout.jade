@@ -3,7 +3,7 @@ include ./../mixins/ie
 doctype html
 html(lang="en")
   head
-    meta(charset='utf-8')
+    meta(charset='UTF-8')
     +ie('if IE')
       meta(http-equiv='X-UA-Compatible', content='IE=edge')
     title
@@ -29,13 +29,14 @@ html(lang="en")
     include ./../partials/favicons
   
   body(class='#{id}')
-    block before-content
+    .block.before-content
       include ./../blocks/header
 
     main
       block content
 
-    block after-content
+    .block.after-content
+      include ./../blocks/footer
 
     //- scripts
     block scripts
