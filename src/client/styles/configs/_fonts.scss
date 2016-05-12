@@ -1,0 +1,13 @@
+body {
+   @include font-size(12);
+   color: $brown;
+}
+
+.title {color: $brown; @include font-size(25); text-transform: uppercase;}
+.subtitle {
+  font-style: italic;
+  @include font-size(20);
+}
+.subtitle-red { color: $red;}
+.subtitle-blue { color: $blue;}
+.subtitle-white { color: $white;}

@@ -1,13 +1,138 @@
-body {
-   p {
-    @include font-size(12);
+/*-----------------------------------------*/
+/*  Section à propos
+/*-----------------------------------------*/
+
+
+/*-----------------------------------------*/
+/*  Section video
+/*-----------------------------------------*/
+
+.bg-video { background: url('../images/video-preloader.jpg') top center no-repeat; background-size:cover; color: $white;}
+
+/*-----------------------------------------*/
+/*  Section kit
+/*-----------------------------------------*/
+
+
+/*-----------------------------------------*/
+/*  Section fonctionnalites
+/*-----------------------------------------*/
+
+
+/*-----------------------------------------*/
+/*  Section partenaires
+/*-----------------------------------------*/
+
+#section-partenaires {
+  text-align: center;
+  .subtitle:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: $blue;
+    margin: 20px auto;
+  }
+
+  .partenaire-item {
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+    margin-top: 20px;
+    img {
+      background-color: $blue;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
     }
-}
+    h4 {
+       @include font-size(14);
+    }
+  }
 
-section {
+  .quote {
     position: relative;
-    padding: 50px 0;
+    width: 40%;
+    margin: 80px auto;
+    padding: 30px;
+    font-style: italic;
+    .subtitle:after {
+      background-color: $red;
+    }
+  }
 }
 
-.bg-red { background-color: $red; color: $white;}
-.bg-blue { background-color: $blue; color: $white;}
+/*-----------------------------------------*/
+/*  Section contact
+/*-----------------------------------------*/
+
+#section-contact {
+
+  header {
+    position: relative;
+    text-align: center;
+    .contact-title {
+      @include font-size(75);
+      color: $black;
+      opacity: 0.4;
+      font-weight: 900;
+      min-height: 200px;
+
+      @include breakpoint(tablet) {
+         @include font-size(200);
+         min-height: auto;
+      }
+    }
+
+    #contact-infos {
+      text-align: center;
+      position: absolute;
+      display: inline-block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      width: 100%;
+      li {
+        display: inline-block;
+        color: $white;
+        margin: 0 25px;
+        .txt-uppercase {
+          font-weight:700;
+          &:after {
+            content : "//";
+            color: $blue;
+            margin: 0 2px;
+          }
+        }
+      }
+      &:after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: $blue;
+        margin: 20px auto;
+      }
+    }
+  }
+
+  #contact-form {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    a {
+      color: $white;
+      margin: 10px;
+    }
+  }
+
+}
