@@ -7,6 +7,24 @@
         "url": "/",
         "httpcode": 200,
         "enable": true
+      },
+      {
+        "id": "support",
+        "url": "/support",
+        "httpcode": 200,
+        "enable": true
+      },
+      {
+        "id": "mentions-legales",
+        "url": "/mentions-legales",
+        "httpcode": 200,
+        "enable": true
+      },
+      {
+        "id": "cgu",
+        "url": "/cgu",
+        "httpcode": 200,
+        "enable": true
       }
     ],
     "system": {
